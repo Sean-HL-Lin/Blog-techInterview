@@ -11,5 +11,12 @@ module.exports = () => {
     
   })
 
+  router.get('/posts', (req, res) => {
+    res.send('displaying blogs')
+    // res.render('posts_new')
+  })
+
+
+
   return router;
 };
