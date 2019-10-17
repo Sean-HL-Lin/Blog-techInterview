@@ -9,7 +9,9 @@ module.exports = () => {
   })
 
   router.post('/posts/submit', (req, res) => {
-    
+    let newPost = req.body
+    // console.log(newPost)
+    data.push(newPost)
   })
 
   router.get('/posts', (req, res) => {
