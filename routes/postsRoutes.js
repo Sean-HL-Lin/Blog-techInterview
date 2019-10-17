@@ -6,7 +6,7 @@ const postsAction = require('../controllers/postsAction')()
 module.exports = () => {
 
   router.get('/posts/new', (req, res) => {
-    postsAction.get(req,res)
+    postsAction.create(req,res)
     // res.render('posts_new')
   })
 
@@ -17,7 +17,7 @@ module.exports = () => {
   })
 
   router.get('/posts', (req, res) => {
-    res.render('posts_index',data)
+    postsAction.get(req, res, data)
   })
 
 
