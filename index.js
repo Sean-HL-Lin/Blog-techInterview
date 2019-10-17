@@ -13,6 +13,7 @@ const postsRoutes = require('./routes/postsRoutes')
 app.use(homeRoutes())
 app.use(postsRoutes())
 
+
 app.listen(PORT, () => {
   console.log(`app listening on port ${PORT}!`);
 });
