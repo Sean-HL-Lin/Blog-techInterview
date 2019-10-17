@@ -17,5 +17,5 @@ module.exports = () => {
       email: "email 1 "
     },
   ]
-  return router;
+  return data;
 };

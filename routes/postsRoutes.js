@@ -1,5 +1,6 @@
 const express = require('express');
 const router  = express.Router();
+const data = require('../models/mockData')()
 module.exports = () => {
 
 
@@ -12,8 +13,8 @@ module.exports = () => {
   })
 
   router.get('/posts', (req, res) => {
-    res.send('displaying blogs')
-    // res.render('posts_new')
+    console.log(data)
+    res.render('posts_index',data)
   })
 
 
