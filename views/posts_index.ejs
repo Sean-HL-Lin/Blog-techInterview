@@ -1,0 +1,14 @@
+<% include partials/_header.ejs %>
+
+<% for (let blog of data) { %>
+  <div class="card mt-2 mb-1" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%= blog.title%></h5>
+        <h6 class="card-subtitle mb-2 text-muted">posted by: <%= blog.email%></h6>
+        <p class="card-text"><%= blog.description%></p>
+
+      </div>
+    </div>
+<%}%>
+
+<% include partials/_footer.ejs %>
