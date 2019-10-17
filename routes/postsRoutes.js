@@ -13,7 +13,6 @@ module.exports = () => {
   })
 
   router.get('/posts', (req, res) => {
-    console.log(data)
     res.render('posts_index',data)
   })
 
