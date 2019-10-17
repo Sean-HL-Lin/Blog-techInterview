@@ -4,8 +4,7 @@ module.exports = () => {
 
 
   router.get('/posts/new', (req, res) => {
-    res.send('hello from post')
-    // res.render('posts_new')
+    res.render('posts_new')
   })
 
   router.post('/posts/submit', (req, res) => {
